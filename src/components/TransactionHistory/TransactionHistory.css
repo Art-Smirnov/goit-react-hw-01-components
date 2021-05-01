@@ -1,0 +1,27 @@
+.transaction-history {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 15px solid #ffffff;
+  border-top: 5px solid #ffffff;
+  border-collapse: collapse;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  font-size: 20px;
+}
+
+.transaction-history th {
+  font-weight: bold;
+  padding: 5px;
+  background: #ffffff;
+  border: none;
+  border-bottom: 5px solid #ffffff;
+}
+
+.transaction-history td {
+  padding: 5px;
+  border: none;
+  border-bottom: 5px solid #ffffff;
+}
+/*# sourceMappingURL=TransactionHistory.css.map */
