@@ -4,27 +4,24 @@ import randomColor from 'randomcolor';
 
 import './Statistics.scss';
 
-const Statistics = ({ title, stats }) => {
-  return (
-    <section className="statistics">
-      {title && <h2 className="statistics__title">{title}</h2>}
+const Statistics = ({ title, stats }) => (
+  <section className="statistics">
+    {title && <h2 className="statistics__title">{title}</h2>}
 
-      <ul className="statistics__stat-list">
-        {stats.map(statEl => (
-          <li
-            style={{ backgroundColor: randomColor() }}
-            key={statEl.id}
-            className="statistics__item"
-          >
-            <span className="statistics__label">{statEl.label} </span>
-            <span className="statistics__percentage">{statEl.percentage}%</span>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-};
-
+    <ul className="statistics__stat-list">
+      {stats.map(statEl => (
+        <li
+          style={{ backgroundColor: randomColor() }}
+          key={statEl.id}
+          className="statistics__item"
+        >
+          <span className="statistics__label">{statEl.label} </span>
+          <span className="statistics__percentage">{statEl.percentage}%</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+);
 Statistics.defaultProps = {
   title: '',
 };
