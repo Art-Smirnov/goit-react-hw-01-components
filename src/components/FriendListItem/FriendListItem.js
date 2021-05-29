@@ -5,11 +5,7 @@ import './FriendListItem.scss';
 
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <>
-    {isOnline ? (
-      <span className="status_green"></span>
-    ) : (
-      <span className="status_red"></span>
-    )}
+    <span className={isOnline ? 'status_green' : 'status_red'}></span>
     <img className="avatar" src={avatar} alt={name} width="48" />
     <p className={name}>{name}</p>
   </>
