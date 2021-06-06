@@ -22,6 +22,7 @@ const Statistics = ({ title, stats }) => (
     </ul>
   </section>
 );
+
 Statistics.defaultProps = {
   title: '',
 };
